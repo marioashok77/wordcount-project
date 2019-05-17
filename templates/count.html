@@ -1,0 +1,89 @@
+<a href="{% url 'home'%}">Home</a>
+<h1>Words that the user entered:{{text}}</h1>
+
+<p>Total Words: {{count}}</p>
+
+{% for key,value  in sorted  %}
+
+{{key}}-{{value}}
+<br>
+
+
+{% endfor %}
+
+ <h2>The most frequently used word is "{{max}}"</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% for word,countTotal in worddictionary  %}
+
+{{word}}-{{countTotal}}
+
+<br>
+
+
+
+{% endfor %}
